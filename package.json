@@ -6,7 +6,8 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "dev": "nodemon appData.js"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.0",
@@ -19,6 +20,7 @@
     "express": "^4.18.2",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
     "react": "18.1.0",
     "react-dom": "^18.2.0",
     "react-native": "0.70.5",
