@@ -1,10 +1,9 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Input, Button } from 'react-native-elements';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const CadastroScreen = ({navigation}) => {
+
+const CadastroScreen = ({ navigation }) => {
     return (
         <View style={[styles.container, {
             flexDirection: "column"
@@ -12,10 +11,13 @@ const CadastroScreen = ({navigation}) => {
             <View style={{ flex: 4, alignItems: "center", paddingTop: 40 }}></View>
             <View style={{ flex: 2, padding: 20 }}>
                 <Input
+                    name="email"
                     placeholder='Email'
                 />
                 <Input
+                    name="password"
                     placeholder='Senha'
+                    secureTextEntry
                 />
             </View>
             <View style={{ flex: 4, padding: 60 }}>

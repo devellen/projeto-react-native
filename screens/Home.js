@@ -1,10 +1,9 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Avatar, Input, Button } from 'react-native-elements';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({ navigation }) => {
+
     return (
         <View style={[styles.container, {
             flexDirection: "column"
@@ -26,10 +25,12 @@ const HomeScreen = ({navigation}) => {
                 />
                 <Input
                     placeholder='Senha'
+                    secureTextEntry
                 />
             </View>
             <View style={{ flex: 4, padding: 60 }}>
                 <Button
+                    onPress={() => navigation.navigate('Listar')}
                     buttonStyle={styles.button}
                     title="Entrar"
                 />
