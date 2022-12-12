@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, View, TextInput } from "react-native";
 import { Input, Button } from 'react-native-elements';
+import axios from 'axios';
 
 
 const CadastroScreen = ({ navigation }) => {
@@ -11,7 +12,7 @@ const CadastroScreen = ({ navigation }) => {
 
     async function inserirCadastro() {
 
-        await axios.post('http://192.168.37.107/',
+        await axios.post('http://192.168.37.107/cadastro',
             {
             email: getEmail,
             senha: getSenha
